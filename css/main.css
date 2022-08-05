@@ -1,0 +1,700 @@
+@charset "utp-8";
+@font-face {
+    font-family: 'Binggrae';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_one@1.0/Binggrae.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'SundayBest';
+    src: url('../font/SundayBest.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+} 
+
+* {
+    margin: 0;
+    padding: 0;
+}
+ul, ol {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+}
+.clearfix::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+
+/* font
+font-family: 'TwayAir';
+font-family: 'Binggrae';
+*/
+
+body {
+    font-family: 'Binggrae';
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 60px;
+}
+
+#top {
+    background-color: rgb(255,255,255);
+}
+#top-inner {
+    margin: 0 auto;
+    max-width: 1320px;
+}
+#logo {
+    text-align: center;
+    margin-top: 10px;
+}
+#logo img {
+    display: inline-block;
+    max-width: 100%;
+}
+
+.mb .swiper-slide {
+    position: relative;
+}
+.mb .swiper-slide img {
+    max-width: 100%;
+}
+.mb .swiper-pagination-progressbar span {
+    background-color: #f58421;
+}
+.mb .swiper-button-prev {
+    color: #64459e;
+}
+.mb .swiper-button-next {
+    color: #df5a5b;
+}
+.arrow {
+    position: absolute;
+    bottom: 130px;
+    right: 295px;
+    font-family: 'SundayBest';
+    font-size: 24px;
+    color: #fff;
+    width: 160px;
+    height: 44px;
+    float: left;
+}
+.mb .swiper-slide .arrow img {
+    max-width: 51px;
+    vertical-align: middle;
+}
+
+#wrap {
+    margin: 0 auto;
+    max-width: 1320px;
+}
+#container {
+    margin: 0 auto;
+    max-width: 1320px;
+}
+.title {
+    font-family: 'SundayBest';
+    font-size: 30px;
+    color: #333;
+    margin-top: 200px;
+    margin-bottom: 90px;
+    text-align: center;
+}
+.left {
+    float: left;
+}
+.right {
+    float: right;
+}
+.brand-produce {
+    margin-left: 45px;
+}
+.brand-produce img {
+    width: 40%;
+}
+.brand-text {
+    padding-top: 62px;
+    width: 55%;
+    padding-left: 5%;
+    font-size: 24px;
+}
+.brand-text p {
+    padding-top: 75px;
+}
+.brand-color {
+    margin-top: 288px;
+}
+.brand-color ul {
+    max-width: 880px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+}
+.brand-color ul li {
+    position: relative;
+    width: 33.3%;
+    text-align: center;
+}
+.code {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    opacity: 0;
+    transition: all 0.5s;
+    background-color: rgba(255,255,255,0.5);
+}
+.code p {
+    padding-top: 85px;
+    font-size: 24px;
+}
+.brand-color li:hover .code {
+    opacity: 1;
+}
+.brand-color h3 {
+    background: url(../images/color4.png) no-repeat 29% -9%;
+    color: #f58421;
+    padding-top: 70px;
+    padding-bottom: 70px;
+    padding-left: 110px;
+    margin-left: 160px;
+    font-size: 24px;
+}
+
+#hot {
+    margin-top: 245px;
+    background: url(../images/hot.jpg) no-repeat center 103%;
+}
+#hot-inner {
+    margin: 0 auto;
+    max-width: 1320px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.lemon img {
+    max-width: 100%;
+}
+.tt1 h1 {
+    font-family: 'TwayAir';
+    font-size: 58px;
+    color: #f58421;
+    padding-top: 288px;
+    padding-bottom: 75px;
+}
+.tt1 p {
+    font-size: 16px;
+    line-height: 48px;
+}
+.tt1 .red {
+    color: #df5a5b;
+}
+#new {
+    background: url(../images/new.jpg) no-repeat center 103%;
+}
+#new-inner {
+    margin: 0 auto;
+    max-width: 1320px;
+    display: flex;
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+}
+.orengem {
+    margin-top: 115px;
+}
+.orengem img {
+    max-width: 100%;
+}
+.tt2 {
+    text-align: right;
+    padding-left: 264px;
+}
+
+.jam {
+    background: url(../images/index1.jpg) no-repeat;
+    height: 200px;
+}
+.juice {
+    background: url(../images/index2.jpg) no-repeat;
+    height: 200px;
+}
+.other {
+    background: url(../images/index3.jpg) no-repeat;
+    height: 200px;
+}
+.item-list h2 {
+    font-size: 72px;
+    font-family: 'SundayBest';
+    color: #fff;
+    padding-top: 60px;
+    padding-left: 110px;
+    box-sizing: border-box;
+}
+.item-list ul {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    text-align: center;
+    padding-top: 108px;
+    padding-bottom: 120px;
+    line-height: 0;
+}
+.item-list ul li h4 {
+    padding-top: 40px;
+}
+.item-list ul li h3 {
+    font-size: 20px;
+    color: #f58421;
+    padding-top: 34px;
+    padding-bottom: 18px;
+    line-height: 60px;
+}
+.item-list ul li p {
+    font-size: 14px;
+}
+
+#benner {
+    margin-top: 84px;
+}
+#benner ul{
+    display: flex;
+    flex-wrap: wrap;
+}
+#benner img {
+    display: block;
+    max-width: 100%;
+}
+
+
+#tip img {
+    max-width: 100%;
+}
+.recipe-tip {
+    max-width: 611px;
+}
+.recipe-tip .jam-juice, .recipe-tip .ten-recipe {
+    position: relative;
+}
+.more-tip {
+    margin-top: 10px;
+}
+.more {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    opacity: 0;
+    transition: all 0.5s;
+    background-color: rgba(255,255,255,0.8);
+}
+.more-text {
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.more p {
+    font-family: 'SundayBest';
+    color: #333;
+    font-size: 40px;
+}
+#tip .recipe-tip:hover .more {
+    opacity: 1;
+}
+
+#sugar {
+    max-height: 650px;
+    overflow: hidden;
+    display: block;
+    margin-top: 300px;
+    position: relative;
+}
+#sugar video {
+    max-width: 100%;
+    z-index: -10;
+    overflow: hidden;
+}
+#sugar h1 {
+    position: absolute;
+    top: 144px;
+    left: 410px;
+    color: #fff;
+    text-shadow: 0px 0px 10px #fff;
+}
+
+#footer {
+    margin-top: 200px;
+}
+#footer-inner {
+    margin: 0 auto;
+    max-width: 1320px;
+}
+#footer-inner ul li {
+    float: left;
+    padding: 0px 20px 20px 0;
+}
+#footer-inner .left ul li:hover {
+    color: #f58421
+}
+#footer-inner p {
+    color: #777;
+    margin-bottom: 52px;
+}
+#footer-inner .right ul {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+#footer-inner .right {
+    margin-top: 35px;
+}
+#footer-inner .right h1 {
+    margin-left: 20px;
+}
+#footer-inner .right ul li img {
+    -webkit-filter: grayscale(100%);
+    -webkit-transition: .5s ease-in-out;
+    -moz-filter: grayscale(100%); 
+    -moz-transition: .5s ease-in-out;
+    -o-filter: grayscale(100%); 
+    -o-transition: .5s ease-in-out;
+}
+#footer-inner .right ul li img:hover {
+    -webkit-filter: grayscale(0%);
+    -webkit-transition: .5s ease-in-out;
+    -moz-filter: grayscale(0%);
+    -moz-transition: .5s ease-in-out;
+    -o-filter: grayscale(0%);
+    -o-transition: .5s ease-in-out;
+} 
+.mob {
+    opacity: 0;
+}
+
+@media (max-width: 1270px){
+    .brand-color h3 {
+        background: none;
+        padding-left: 0;
+    }
+    #hot-inner, #new-inner {
+        justify-content: center;
+    }
+    #new-inner {
+        flex-direction: row;
+    }
+    .tt1 h1 {
+        padding-top: 50px;
+    }
+    .tt2 {
+        text-align: center;
+        padding-left: 0;
+    }
+}
+@media (min-width: 931px) and (max-width: 1269px){
+    .tt2 {
+        padding-top: 200px;
+    }
+}
+@media (min-width: 751px) and (max-width: 990px){
+    .brand-color img {
+        width: 80%;
+    }
+    .brand-color h3 {
+        font-size: 21px;
+        padding-bottom: 0;
+    }
+    #hot-inner, #new-inner {
+        justify-content: center;
+    }
+    .item-list ul li {
+        margin-bottom: 32px;
+    }
+    .orengem {
+        margin-left: -7%;
+    }
+}
+@media (min-width: 506px) and (max-width: 750px){
+    #logo img {
+        width: 180px;
+    }
+    .arrow {
+        position: absolute;
+        bottom: 20%;
+        right: 4.5%;
+        font-family: 'SundayBest';
+        font-size: 14px;
+        color: #fff;
+        width: 160px;
+        height: 44px;
+        float: left;
+    }
+    .mb .swiper-slide .arrow img {
+        max-width: 28px;
+    }
+    .title {
+        font-family: 'SundayBest';
+        font-size: 24px;
+        color: #333;
+        margin-top: 100px;
+        margin-bottom: 40px;
+        text-align: center;
+    }
+    .brand-produce {
+        text-align: center;
+    }
+    .brand-produce>img {
+        width: 100%;
+    }
+    .brand-text {
+        padding-top: 62px;
+        width: 100%;
+        font-size: 18px;
+    }
+    .brand-text img {
+        margin-left: 0%;
+    }
+    .brand-text p {
+        padding-top: 40px;
+        text-align: center;
+    }
+    .brand-color img {
+        max-width: 100%;
+    }
+    .brand-color h3 {
+        font-size: 16px;
+        margin-left: 50px;
+    }
+    #hot {
+        margin-top: 0;
+    }
+    #hot-inner {
+        justify-content: center;
+    }
+    .lemon {
+        margin-left: -5%;
+    }
+    .tt1 h1 {
+        padding-bottom: 29px;
+        font-size: 52px;
+    }
+    .tt1 p {
+        font-size: 14px;
+        line-height: 39px;
+    }
+    #new-inner {
+        justify-content: center;
+    }
+    .orengem {
+        margin-left: -20%;
+    }
+    .tt2 {
+        padding-left: 14px;
+    }
+    .bg img {
+        width: 100%;
+    }
+    .bg2 img {
+        width: 100%;
+    }
+    #item {
+        padding-top: 160px;
+    }
+    .item-list ul {
+        flex-wrap: wrap;
+    }
+    .item-list ul li {
+        margin-top: 3%;
+    }
+    #benner ul li {
+        width: 50%;
+    }
+    .recipe-tip {
+        width: 48%;
+    }
+    .more-tip {
+        margin-top: 6%;
+    }
+    #sugar h1 {
+        position: absolute;
+        top: 19%;
+        left: 15%;
+        color: #fff;
+        text-shadow: 0px 0px 8px #fff;
+        font-size: 160%;
+        line-height: 50px;
+    }
+    #footer-inner .left {
+        margin-left: 5%;
+    }
+}
+@media (max-width: 505px){
+    #logo img {
+        width: 120px;
+    }
+    .arrow {
+        position: absolute;
+        bottom: 22%;
+        right: -6%;
+        font-family: 'SundayBest';
+        font-size: 8px;
+        color: #fff;
+        width: 160px;
+        height: 44px;
+        float: left;
+    }
+    .mb .swiper-slide .arrow img {
+        max-width: 18px;
+    }
+    .title {
+        font-family: 'SundayBest';
+        font-size: 24px;
+        color: #333;
+        margin-top: 100px;
+        margin-bottom: 40px;
+        text-align: center;
+    }
+    .brand-produce {
+        margin-left: 0;
+    }
+    .brand-text {
+        width: 100%;
+        font-size: 16px;
+    }
+    .brand-text img {
+        margin-left: 18%;
+    }
+    .brand-text p {
+        padding-top: 40px;
+        text-align: center;
+    }
+    .brand-color {
+        margin-top: 200px;
+    }
+    .brand-color ul li {
+        width: 30%;
+    }
+    .brand-color ul li img{
+        max-width: 100%;
+    }
+    .brand-color h3 {
+        padding-left: 0;
+        margin-left: 18%;
+        font-size: 14px;
+        line-height: 24px;
+        width: 330px;
+    }
+    #hot-inner, #new-inner {
+        justify-content: center;
+    }
+    .lemon {
+        margin-right: 10%;
+    }
+    #hot {
+        margin-top: 0;
+    }
+    .tt1 {
+        text-align: center;
+    }
+    .tt1 h1 {
+        font-size: 34px;
+        padding-top: 30px;
+        padding-bottom: 40px;
+    }
+    .tt1 p {
+        line-height: 37px;
+        font-size: 12px;
+    }
+    .bg {
+        top: 264px;
+    }
+    .bg img {
+        width: 100%;
+    }
+    .bg2 img {
+        width: 100%;
+    }
+    #new {
+        margin-top: 60px;
+    }
+    #new .tt1 h1 {
+        padding-bottom: 18px;
+        padding-top: 12px;
+    }
+    .tt2 {
+        padding-left: 0;
+    }
+    .orengem {
+        margin-top: 0;
+        width: 80%;
+        margin-left: -20%;
+    }
+    .orengem img {
+        max-width: 100%;
+    }
+    .item-list ul {
+        flex-wrap: wrap;
+        padding-top: 0;
+    }
+    .item-list ul li {
+        margin-top: 3%;
+    }
+    .item-list h2 {
+        font-size: 40px;
+        padding: 0;
+        text-align: center;
+    }
+    .jam {
+        height: 100%;
+    }
+    .juice {
+        height: 100%;
+    }
+    .other {
+        height: 100%;
+    }
+    #benner {
+        margin-top: 0;
+    }
+    #sugar {
+        margin-top: 100px;
+    }
+    #sugar h1 {
+        position: absolute;
+        top: 8%;
+        left: 10%;
+        color: #fff;
+        text-shadow: 0px 0px 5px #fff;
+        font-size: 90%;
+        line-height: 36px;
+    }
+    #footer {
+        margin-top: 30px;
+    }
+    #footer-inner .left, #footer-inner .right {
+        float: none;
+    }
+    #footer-inner {
+        text-align: center;
+    }
+    #footer-inner ul {
+        justify-content: center;
+        margin-left: 7%;
+    }
+    #footer-inner ul li a {
+        font-size: 14px;
+    }
+    #footer-inner p {
+        font-size: 14px;
+        line-height: 24px;
+    }
+}
