@@ -246,6 +246,9 @@ body {
     padding-bottom: 120px;
     line-height: 0;
 }
+.item-list ul li img {
+    max-width: 100%;
+}
 .item-list ul li h4 {
     padding-top: 40px;
 }
@@ -566,6 +569,9 @@ body {
     .brand-produce {
         margin-left: 0;
     }
+    .brand-produce img {
+        width: 100%;
+    }
     .brand-text {
         width: 100%;
         font-size: 16px;
@@ -588,10 +594,11 @@ body {
     }
     .brand-color h3 {
         padding-left: 0;
-        margin-left: 18%;
+        margin: 0 auto;
         font-size: 14px;
         line-height: 24px;
-        width: 330px;
+        max-width: 330px;
+        padding-top: 30px;
     }
     #hot-inner, #new-inner {
         justify-content: center;
@@ -647,6 +654,9 @@ body {
     }
     .item-list ul li {
         margin-top: 3%;
+    }
+    .item-list ul li img {
+        max-width: 100%;
     }
     .item-list h2 {
         font-size: 40px;
