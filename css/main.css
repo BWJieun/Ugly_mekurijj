@@ -578,6 +578,7 @@ body {
     }
     .brand-text img {
         margin-left: 18%;
+        width: 60%;
     }
     .brand-text p {
         padding-top: 40px;
