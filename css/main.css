@@ -186,7 +186,7 @@ body {
     font-family: 'TwayAir';
     font-size: 58px;
     color: #f58421;
-    padding-top: 288px;
+    padding-top: 263px;
     padding-bottom: 75px;
 }
 .tt1 p {
@@ -215,6 +215,9 @@ body {
 .tt2 {
     text-align: right;
     padding-left: 264px;
+}
+.tt2 h1 {
+    padding-top: 288px;
 }
 
 .jam {
@@ -408,6 +411,16 @@ body {
         padding-top: 200px;
     }
 }
+@media (min-width: 750px) and (max-width: 1320px) {
+    #benner ul {
+        flex-wrap: nowrap;
+    }
+}
+@media (min-width: 750px) and (max-width: 1200px) {
+    .recipe .recipe-tip {
+        width: 49%;
+    }
+}
 @media (min-width: 751px) and (max-width: 990px){
     .brand-color img {
         width: 80%;
@@ -525,7 +538,7 @@ body {
         width: 48%;
     }
     .more-tip {
-        margin-top: 6%;
+        margin-top: 1%;
     }
     #sugar h1 {
         position: absolute;
@@ -539,6 +552,11 @@ body {
     #footer-inner .left {
         margin-left: 5%;
     }
+    .recipe .left, .recipe .right {
+        width: 49%;
+    }
+
+
 }
 @media (max-width: 505px){
     #logo img {
@@ -688,6 +706,13 @@ body {
         font-size: 90%;
         line-height: 36px;
     }
+    .recipe .left, .recipe .right {
+        width: 49%;
+    }
+    .more-tip {
+        margin-top: 2px;
+    }
+
     #footer {
         margin-top: 30px;
     }
